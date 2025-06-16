@@ -22,7 +22,7 @@ function InfoSection({ tripInfo }) {
         <div className='my-5 flex flex-col gap-2'>
           <h2 className='font-bold text-3xl mt-2'>
             {(JSON.parse(localStorage.getItem('user'))?.name?.split?.(' ')[0] || 'User')}'s Trip :
-        </h2>
+         </h2>
 
           <h2 className='font-semibold text-xl'>Starting from : {tripInfo?.tripData?.source}</h2>
           <h2 className='font-semibold text-xl'>Travelling to : {tripInfo?.tripData?.destination}</h2>
