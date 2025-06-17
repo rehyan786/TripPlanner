@@ -7,6 +7,7 @@ import { FcGoogle } from 'react-icons/fc';
 import { Dialog, DialogContent, DialogDescription, DialogHeader ,DialogTitle} from "@/components/ui/dialog";
 import { useGoogleLogin } from '@react-oauth/google';
 import axios from 'axios';
+import './Header.css'
 
 function Header() {
   const [openDialog, setOpenDialog] = useState(false);
@@ -40,9 +41,24 @@ function Header() {
   }, []);
 
   return (
-    <div className='p-3 shadow-sm flex justify-between items-center px-6 bg-transparent'>
-      <img src="/logo.svg" alt="Logo" />
-      <div>
+    <div className='navbar p-3 shadow-sm flex justify-between items-center bg-transparent'>
+      <img className="logo" src="\JMD__LOGO__1_-1-removebg-preview.png" alt="Logo" />
+
+      <div className="link">
+          <ul>
+            <li>Home</li>
+             <li className='top'>Explore Dubai <i className="fas fa-chevron-down"></i></li>
+                
+            <li>
+              Visa Services <i className="fas fa-chevron-down"></i>
+            </li>
+            <li>Destinations</li>
+            <li>About</li>
+            <li>Omed Vovage</li>
+          </ul>
+        </div>
+      <div className='flex' >
+      
         {user ?
           <div className='flex items-center gap-3'>
             <a href='/create-trip'>

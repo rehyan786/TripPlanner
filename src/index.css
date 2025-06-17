@@ -31,10 +31,13 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  /* display: flex; */
+  /* place-items: center; */
+
   /* min-width: 320px;
   min-height: 100vh; */
+  background-color: rgba(24, 23, 23, 0.452);
+  /* height: 100vh; */
 }
 
 h1 {
@@ -73,6 +76,34 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index:  -1;
+}
+
+.overlay-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  top: 40%;
+}
+
+
+
 
 
 
@@ -130,6 +161,25 @@ button:focus-visible {
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+}
+.typewriter h2 {
+  overflow: hidden;       
+  border-right: 2px solid white; 
+  white-space: nowrap;    
+  margin: 0 auto;        
+  color: white  ; 
+  letter-spacing: 2px;
+  animation: typing 5s steps(30, end) 2s , blink 0.7s step-end infinite;
+  width: fit-content;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
 }
 
 

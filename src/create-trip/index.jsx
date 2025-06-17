@@ -172,7 +172,7 @@ function CreateTrip() {
   };
 
   return (
-    <div className='max-w-4xl mx-auto px-5 mt-10'>
+    <div className='max-w-8xl mx-auto px-5 pt-10   bg-white'>
       <Toaster
         toastOptions={{
           style: {
@@ -183,7 +183,7 @@ function CreateTrip() {
           },
         }}
       />
-      <h2 className='font-bold text-3xl text-center'>Tell us your travel preferences 🏕️🌴🌊</h2>
+      <h2 className=' fonts-sans font-bold text-4xl text-center'>Tell us your travel preferences 🏕️🌴🌊</h2>
       <p className='mt-3 text-gray-500 text-xl text-center'>
         Just provide some basic information, and our trip planner will generate a customized itinerary based on your preferences.
       </p>
@@ -191,7 +191,7 @@ function CreateTrip() {
       {/* STARTING POINT */}
       <div className='mt-20'>
         <div>
-          <h2 className='text-xl my-3 font-medium'>Where are you starting at? 🏡</h2>
+          <h2 className='text-xl my-3 font-medium'>What is your departure location? 🏡</h2>
           <Autocomplete
             onSelect={(suggestion) =>
               handleInputChange('startingPoint', suggestion.description)
@@ -207,7 +207,7 @@ function CreateTrip() {
       {/* DESTINATION */}
       <div className='mt-20'>
         <div>
-          <h2 className='text-xl my-3 font-medium'>What is your destination of choice? 📍</h2>
+          <h2 className='text-xl my-3 font-medium'>What is your intended destination? 📍</h2>
           <Autocomplete
             onSelect={(suggestion) =>
               handleInputChange('destination', suggestion.description)
@@ -233,7 +233,7 @@ function CreateTrip() {
 
       {/* BUDGET */}
       <div className='mt-20'>
-        <h2 className='text-xl my-3 font-medium'>What is your budget?</h2>
+        <h2 className='text-xl my-3 font-medium'>Enter your preferred budget range</h2>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mt-5'>
           {SelectBudgetOptions.map((item, index) => (
             <div
@@ -256,7 +256,7 @@ function CreateTrip() {
 
       {/* COMPANIONS */}
       <div className='mt-20'>
-        <h2 className='text-xl my-3 font-medium'>Who are you planning to go with on your next trip?</h2>
+        <h2 className='text-xl my-3 font-medium'>Select your travel companion's</h2>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mt-5'>
           {SelectTravelList.map((item, index) => (
             <div
@@ -279,7 +279,7 @@ function CreateTrip() {
       </div>
 
       {/* GENERATE BUTTON */}
-      <div className='mt-20 flex justify-end'>
+      <div className='mt-20 flex justify-center pb-20 '>
         <Button className='w-full md:w-auto' onClick={onGenerateTrip}>
           {loading ?
             <AiOutlineLoading3Quarters className='h-7 w-7 animate-spin' /> : 'Generate Trip'
