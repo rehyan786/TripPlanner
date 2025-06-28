@@ -172,7 +172,7 @@ function CreateTrip() {
   };
 
   return (
-    <div className='max-w-8xl mx-auto px-5 pt-10   bg-white'>
+    <div className='max-w-8xl mx-auto px-5 pt-10  bg-white '>
       <Toaster
         toastOptions={{
           style: {
@@ -187,6 +187,9 @@ function CreateTrip() {
       <p className='mt-3 text-gray-500 text-xl text-center'>
         Just provide some basic information, and our trip planner will generate a customized itinerary based on your preferences.
       </p>
+
+
+  
 
       {/* STARTING POINT */}
       <div className='mt-20'>

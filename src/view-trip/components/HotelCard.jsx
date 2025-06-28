@@ -15,7 +15,7 @@ function HotelCard({ hotelInfo }) {
   };
 
   return (
-    <div className="h-full">
+    <div className="h-full bg-white">
       <Link to={'https://www.google.com/maps/search/?api=1&query=' + hotelInfo.name + "," + hotelInfo.address} target="_blank">
         <div className="hover:scale-105 transition-all cursor-pointer h-full flex flex-col">
           <GlobalAPI

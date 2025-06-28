@@ -3,7 +3,7 @@ import React from 'react';
 function FlightCard({ tripInfo }) {
   return (
     <div>
-      <div className='font-bold text-xl mb-4 mt-6 text-gray-800'>Flights</div>
+      <div className='font-bold text-xl mb-4 mt-6 text-gray-800 bg-white'>Flights</div>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-20'>
         {tripInfo?.tripData?.travelDetails?.flights?.map((flight, index) => (
           <div

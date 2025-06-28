@@ -12,7 +12,7 @@ function UserTripCard({ trip }) {
     };
     return (
         <Link to={`/view-trip/${trip?.id}`}>
-        <div className='hover:scale-105 transition-all hover:shadow-md'>
+        <div className='hover:scale-105 transition-all hover:shadow-md bg-white'>
 
             <GlobalAPI
                 name={trip.tripData.destination}

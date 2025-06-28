@@ -14,7 +14,7 @@ function PlaceCard({ placeInfo }) {
 
   return (
     <Link to={'https://www.google.com/maps/search/?api=1&query=' + placeInfo?.name} target='_blank' className='no-underline'>
-      <div className='border rounded-xl p-3 mt-2 flex gap-5 hover:scale-105 transition-all hover:shadow-md cursor-pointer'>
+      <div className='border bg-white rounded-xl p-3 mt-2 flex gap-5 hover:scale-105 transition-all hover:shadow-md cursor-pointer'>
         
         <GlobalAPI
           name={placeInfo?.name}

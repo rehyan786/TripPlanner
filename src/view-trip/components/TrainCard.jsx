@@ -3,7 +3,7 @@ import React from 'react';
 function TrainCard({ tripInfo }) {
   return (
     <div>
-      <div className='font-bold text-xl mb-4 text-gray-800 mt-10'>Trains</div>
+      <div className='font-bold text-xl mb-4 text-gray-800 mt-10 bg-white'>Trains</div>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-20'>
         {tripInfo?.tripData?.travelDetails?.trains?.map((train, index) => (
           <div

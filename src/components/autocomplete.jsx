@@ -101,10 +101,10 @@ const Autocomplete = ({ onSelect }) => {
           onChange={handleInputChange}
           onKeyDown={handleKeyDown} // Handle keyboard events
           placeholder="Enter a location"
-          className="w-full p-3 pl-12 text-lg bg-pink-50 border-2 border-pink-200 rounded-lg focus:outline-none focus:border-pink-500 focus:ring-2 focus:ring-pink-300 placeholder-pink-400 transition-all shadow-md"
+          className="w-full p-3 pl-12 text-lg bg-pink-200 border-2 border-pink-200 rounded-lg focus:outline-none focus:border-pink-500 focus:ring-2 focus:ring-pink-300 placeholder-pink-400 transition-all shadow-md"
         />
         <svg
-          className="absolute left-3 top-3.5 h-6 w-6 text-pink-400"
+          className="absolute left-3  top-3.5 h-6 w-6 text-pink-400"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"

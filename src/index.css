@@ -37,6 +37,7 @@ body {
   /* min-width: 320px;
   min-height: 100vh; */
   background-color: rgba(24, 23, 23, 0.452);
+  overflow-x: hidden;
   /* height: 100vh; */
 }
 
@@ -169,7 +170,7 @@ button:focus-visible {
   margin: 0 auto;        
   color: white  ; 
   letter-spacing: 2px;
-  animation: typing 5s steps(30, end) 2s , blink 0.7s step-end infinite;
+  animation: typing 7s steps(30, end) 2s infinite , blink 0.7s step-end infinite;
   width: fit-content;
 }
 
@@ -191,4 +192,29 @@ button:focus-visible {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+
+/*css of travel data */
+
+.box{
+  height: 20vh;
+  width: 95vw;
+  background-color: white;
+  margin-top: 10vh;
+  border-radius: 6vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.box div{
+  width: 18vw;
+  background-color: red;
+  height: 18vh;
+  /* overflow-y: hidden; */
+}
+
+.search_box{
+  height: 10px;
+  width: 70px;
 }
